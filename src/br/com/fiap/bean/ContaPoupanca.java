@@ -1,5 +1,7 @@
 package br.com.fiap.bean;
 
+import java.time.LocalDate;
+
 public class ContaPoupanca extends ContaBancaria{
     //Atributos
     private int diaDeRendimento;
@@ -24,7 +26,7 @@ public class ContaPoupanca extends ContaBancaria{
     }
 
     // Métodos de Classe (particulars)
-    public float novoSaldo () {
-        return
+    public float novoSaldo (float rendimento) {
+
     }
 }

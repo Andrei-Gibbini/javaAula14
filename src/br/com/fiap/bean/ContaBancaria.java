@@ -43,8 +43,14 @@ public class ContaBancaria {
     }
      //Métodos de classe (particulares)
     public float sacar(float valor) {
+        if (valor > saldo) {
+            return saldo;
+        }
+        saldo -= valor;
+        return saldo;
     }
     public float depositar(float valor) {
-        return
+        saldo += valor;
+        return saldo;
     }
 }
